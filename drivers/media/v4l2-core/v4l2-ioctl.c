@@ -1260,6 +1260,20 @@ static void v4l_fill_fmtdesc(struct v4l2_fmtdesc *fmt)
 	case V4L2_META_FMT_RK_ISP1_PARAMS:	descr = "Rockchip ISP1 3A params"; break;
 	case V4L2_META_FMT_RK_ISP1_STAT_3A:	descr = "Rockchip ISP1 3A statistics"; break;
 
+	case V4L2_PIX_FMT_Y8I:		descr = "8-bit Greyscale L/R interleaved"; break;
+	case V4L2_PIX_FMT_Y12I:		descr = "12-bit Grey L/R interleaved"; break;
+	case V4L2_PIX_FMT_Z16:		descr = "16-bit Depth data"; break;
+	case V4L2_PIX_FMT_Y8:       descr = "Greyscale 8-bit"; break;
+	case V4L2_PIX_FMT_RAW8:     descr = "Raw data 8-bit"; break;
+	case V4L2_PIX_FMT_RW16:		descr = "16-bit Raw data"; break;
+	case V4L2_PIX_FMT_INVZ:     descr = "16 Depth"; break;
+	case V4L2_PIX_FMT_INZI:		descr = "32-bit IR:Depth 10:16"; break;
+	case V4L2_PIX_FMT_INVR:     descr = "16 Depth"; break;
+	case V4L2_PIX_FMT_INRI:     descr = "24 Depth/IR 16:8"; break;
+	case V4L2_PIX_FMT_INVI:     descr = "8 IR"; break;
+	case V4L2_PIX_FMT_RELI:     descr = "8 IR alternating on off illumination"; break;
+	case V4L2_PIX_FMT_W10:		descr = "10-bit Packed raw data"; break;
+
 	default:
 		/* Compressed formats */
 		flags = V4L2_FMT_FLAG_COMPRESSED;
